@@ -2,8 +2,8 @@ import './App.css';
 import {useState} from "react"; 
 function App() { 
   //let title = "Welcome"; 
-  const[title, setTitle] = useState("Welcome");
-  const person = {name: 'Bob', age: 30}; //this is an object 
+  const[title, titleFunction] = useState("Welcome"); //initial statee
+  const person = {name: 'Bob', age: 30}; 
   const goog = "http://www.google.com"; 
   const clickHandler1 = () => {
      console.log("Event 1 was fired.");
@@ -14,7 +14,7 @@ function App() {
   const clickChangeTitle = () => { 
        //title = "Hello"; 
        //console.log("Hello"); 
-       setTitle("Hello");
+       titleFunction("Hello"); // state that it will be changed to
     }
     return(
       <div className = 'App'>
