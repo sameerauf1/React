@@ -8,6 +8,12 @@ p{
   color: white;
   background-color:rgb(238, 182, 130)
 }
+button{
+  padding: 1mm;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:blue;
+  outline: blue;
+}
 
 .App-logo {
   height: 40vmin;
