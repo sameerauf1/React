@@ -1,9 +1,10 @@
 import './App.css'; 
+import {useState} from "react"; 
 function App() { 
-  let title = "Welcome"; 
+  //let title = "Welcome"; 
+  const[title, setTitle] = useState("Welcome");
   const person = {name: 'Bob', age: 30}; //this is an object 
   const goog = "http://www.google.com"; 
-
   const clickHandler1 = () => {
      console.log("Event 1 was fired.");
      } 
@@ -15,7 +16,7 @@ function App() {
        console.log("Hello"); 
     }
     return(
-      <div classNme = 'App'>
+      <div className = 'App'>
         <h3> {title}</h3>
         <p> {person.name} is {Math.random() * person.age} years of old.</p>
         <a href = {goog}>Google</a><hr/>
