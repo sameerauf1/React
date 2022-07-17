@@ -2,7 +2,11 @@
   text-align: center;
 }
 h3{
-  color: blue
+  color: rgb(255, 187, 0)
+}
+p{
+  color: white;
+  background-color:rgb(238, 182, 130)
 }
 
 .App-logo {
