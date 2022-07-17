@@ -24,6 +24,13 @@ button:hover{
   background-color: rgb(45, 145, 45);
   color: rgb(218, 214, 216)
 }
+#change{
+
+  color: rgb(228, 62, 40)
+}
+#change:hover{
+  color: white
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
