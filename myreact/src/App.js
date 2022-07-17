@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+function App() { 
+  let title = "Welcome"; 
+  const person = {name: 'Bob', age: 30}; //this is an object 
+  const goog = "http://www.google.com"; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const clickHandler1 = () => {
+     console.log("Event 1 was fired.");
+     } 
+     const clickHandler2 = (msg) => { 
+       console.log(msg); 
+     }
+     const clickChangeTitle = () => { 
+       title = "Hello"; 
+       console.log("Hello"); 
+    }
+    return(
+      <div classNme = 'App'>
+        <h3> {title}</h3>
+        <p> {person.name} is {Math.random() * person.age} years of old.</p>
+        <a href = {goog}>Google</a><hr/>
+      </div>
+    );
 }
-
 export default App;
